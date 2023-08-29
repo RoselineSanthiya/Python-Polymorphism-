@@ -1,1 +1,43 @@
+In [1]: class Animal:
+   ...:     def speak(self):
+   ...:         pass
+   ...:
+   ...: class Dog(Animal):
+   ...:     def speak(self):
+   ...:         return "Woof!"
+   ...:
+   ...: class Cat(Animal):
+   ...:     def speak(self):
+   ...:         return "Meow!"
+   ...:
+   ...: def animal_speak(animal):
+   ...:     print(animal.speak())
+   ...:
+   ...: dog = Dog()
+   ...: cat = Cat()
+   ...:
+   ...: animal_speak(dog)  
+   ...: animal_speak(cat)  
+   ...:
+Woof!
+Meow!
 
+In [2]: class Vehicle:
+   ...:     def start_engine(self):
+   ...:         print("Engine started")
+   ...:
+   ...: class Car(Vehicle):
+   ...:     def start_engine(self):
+   ...:         print("Car engine started")
+   ...:
+   ...: class Motorcycle(Vehicle):
+   ...:     pass
+   ...:
+   ...: car = Car()
+   ...: motorcycle = Motorcycle()
+   ...:
+   ...: car.start_engine()        
+   ...: motorcycle.start_engine()  
+   ...:
+Car engine started
+Engine started
